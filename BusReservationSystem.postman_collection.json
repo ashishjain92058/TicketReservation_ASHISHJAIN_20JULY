@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "656e024f-da2b-4f1d-913c-6aa01175f9c2",
+		"name": "BusReservationSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12923436"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/route/search?departure=Gurgaon&arrival=Delhi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-source",
+						"value": "T-Mobile",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-tenant-id",
+						"value": "112227",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4eXoiLCJpYXQiOjE3MjE0Njk2ODksImV4cCI6MTcyMTUwNTY4OX0.xMaoZdtQajluGPF7NKtyoy6ICgp1FeWWXVHQBwRZmgM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/route/search?departure=Gurgaon&arrival=Delhi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"route",
+						"search"
+					],
+					"query": [
+						{
+							"key": "departure",
+							"value": "Gurgaon"
+						},
+						{
+							"key": "arrival",
+							"value": "Delhi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/route/search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-source",
+						"value": "T-Mobile",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-tenant-id",
+						"value": "112227",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4eXoiLCJpYXQiOjE3MjE0Njk2ODksImV4cCI6MTcyMTUwNTY4OX0.xMaoZdtQajluGPF7NKtyoy6ICgp1FeWWXVHQBwRZmgM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/route/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"route",
+						"search"
+					],
+					"query": [
+						{
+							"key": "departure",
+							"value": "Gurgaon",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/route/search?departure=Gurgaon",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-source",
+						"value": "T-Mobile",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-tenant-id",
+						"value": "112227",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4eXoiLCJpYXQiOjE3MjE0Njk2ODksImV4cCI6MTcyMTUwNTY4OX0.xMaoZdtQajluGPF7NKtyoy6ICgp1FeWWXVHQBwRZmgM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/route/search?departure=Gurgaon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"route",
+						"search"
+					],
+					"query": [
+						{
+							"key": "departure",
+							"value": "Gurgaon"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-source",
+						"value": "T-Mobile",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-tenant-id",
+						"value": "112227",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-application-id",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"xyz\",\n    \"password\": \"Toolkit\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-source",
+						"value": "T-Mobile",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-tenant-id",
+						"value": "112227",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-application-id",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"xyz\",\n    \"password\": \"Toolkit\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/seats?busId=1&routeId=1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-source",
+						"value": "T-Mobile",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-tenant-id",
+						"value": "112227",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ4eXoiLCJpYXQiOjE3MjE0NzI2NTgsImV4cCI6MTcyMTUwODY1OH0.dgIB8nJTVC5oa_UwqPpohttgDu-BciOja7-gx9vI5AI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/seats?busId=1&routeId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"seats"
+					],
+					"query": [
+						{
+							"key": "busId",
+							"value": "1"
+						},
+						{
+							"key": "routeId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
